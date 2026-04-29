@@ -34,3 +34,17 @@ A B2B healthcare SaaS UI built with **React**, **TypeScript**, **Redux Toolkit**
 ```bash
 git clone <your-repo-url>
 cd HealthSaaS
+npm install
+npm run dev
+```
+### create .env file and add 
+
+```bash
+VITE_FIREBASE_API_KEY=xxxxxxxxxxxxxxxxxxxx
+VITE_FIREBASE_AUTH_DOMAIN=xxxxxxxxxxxxxxxxxxxxx
+VITE_FIREBASE_PROJECT_ID=xxxxxxxxxxxxxxxxxx
+VITE_FIREBASE_APP_ID=xxxxxxxxxxxxxxxxxxxxxxxxx
+
+```
+
+#### then you can able to login with firebase 
