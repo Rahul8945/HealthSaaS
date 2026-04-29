@@ -8,6 +8,10 @@ import type { AuthState } from '../features/auth/authTypes'
 import { showToast } from '../redux/slices/toastSlice'
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+const firebaseCredentials = {
+  email: 'charu@gmail.com',
+  password: '12345678',
+}
 
 export function LoginPage() {
   const dispatch = useAppDispatch()
@@ -85,6 +89,11 @@ export function LoginPage() {
         <p className="form-hint">
           Use a Firebase Authentication email/password user from your project.
         </p>
+        <div className="login-credentials" aria-label="Firebase test credentials">
+          <strong>Firebase test login</strong>
+          <span>Email: {firebaseCredentials.email}</span>
+          <span>Password: {firebaseCredentials.password}</span>
+        </div>
 
         <form onSubmit={handleSubmit} noValidate>
           <label>
